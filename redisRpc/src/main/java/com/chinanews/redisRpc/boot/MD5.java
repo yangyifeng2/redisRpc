@@ -1,4 +1,4 @@
-package com.cns.redisRpc.boot;
+package com.chinanews.redisRpc.boot;
 
 /**
  * md5
