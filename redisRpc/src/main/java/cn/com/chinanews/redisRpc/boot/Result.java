@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 import java.io.Serializable;
 
@@ -6,9 +6,7 @@ import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer
 
 /**
  * 返回的结果封装类
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:48:42
  */
 public class Result  extends JdkSerializationRedisSerializer implements Serializable {
 

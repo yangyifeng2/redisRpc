@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 import java.io.Serializable;
 import java.util.UUID;
@@ -7,9 +7,7 @@ import com.alibaba.fastjson.JSON;
 
 /**
  * 发送消息的封装类
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:48:37
  */
 public class RedisTopicMessage implements Serializable{
 	private static final long serialVersionUID = 1L;

@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.util.Iterator;
 import java.util.Map;
@@ -14,10 +14,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 /**
- * 
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午5:00:32
  */
 @Component
 public class RedisRPCSpringApplicationContextHolder  implements ApplicationContextAware{  

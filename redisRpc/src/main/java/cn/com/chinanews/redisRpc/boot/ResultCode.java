@@ -1,10 +1,8 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 /**
  * 基础返回码，具体业务返回码可继承ResultCode
- * @Description:TODO
  * @author:yy
- * @time:2018年7月5日 下午5:20:41
  */
 public class ResultCode {
 

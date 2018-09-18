@@ -1,20 +1,18 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import org.springframework.data.redis.core.RedisTemplate;
 
-import com.chinanews.redisRpc.boot.RedisRpcException;
-import com.chinanews.redisRpc.boot.RedisTopicMessage;
-import com.chinanews.redisRpc.boot.Result;
-import com.chinanews.redisRpc.boot.RpcContants;
+import cn.com.chinanews.redisRpc.boot.RedisRpcException;
+import cn.com.chinanews.redisRpc.boot.RedisTopicMessage;
+import cn.com.chinanews.redisRpc.boot.Result;
+import cn.com.chinanews.redisRpc.boot.RpcContants;
 
 /**
  * 客户端运行反射方法
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:47:27
  */
 @SuppressWarnings("serial")
 public class RedisRpcProxy  implements InvocationHandler, Serializable {

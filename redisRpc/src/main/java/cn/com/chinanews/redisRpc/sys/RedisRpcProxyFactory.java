@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -10,9 +10,7 @@ import javax.naming.spi.ObjectFactory;
 
 /**
  * 动态代理
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:47:44
  */
 public class RedisRpcProxyFactory  implements ObjectFactory {
 

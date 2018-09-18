@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.net.MalformedURLException;
 import org.aopalliance.intercept.MethodInterceptor;
@@ -8,10 +8,7 @@ import org.springframework.remoting.RemoteProxyFailureException;
 import org.springframework.util.Assert;
 
 /**
- * 
- * @Description:TODO
  * @author:yy
- * @time:2018年9月4日 上午9:18:36
  */
 public class RedisRpcClientInterceptor extends RedisBasedRemoteAccessor implements MethodInterceptor {
 

@@ -1,10 +1,8 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 /**
  * 常量类
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:49:31
  */
 public class RpcContants {
 	

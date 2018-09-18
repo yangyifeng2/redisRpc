@@ -1,19 +1,67 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.cns</groupId>
-  <artifactId>redisRpc</artifactId>
-  <version>1.0.0</version>
-  <packaging>jar</packaging>
+	<groupId>cn.com.chinanews</groupId>
+	<artifactId>redisRpc</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
-  <name>redisRpc</name>
-  <url>http://maven.apache.org</url>
+	<name>redisRpc</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-  <dependencies>
+
+
+
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<tag>master</tag>
+		<url>https://github.com/yangyifeng2/redisRpc</url>
+		<connection>scm:git: https://github.com/yangyifeng2/redisRpc.git</connection>
+		<developerConnection>scm:git: https://github.com/yangyifeng2/redisRpc.git</developerConnection>
+	</scm>
+	<developers>
+		<developer>
+			<name>yangyifeng</name>
+			<email>yangyifeng2@163.com</email>
+			<organization>chinanews</organization>
+		</developer>
+	</developers>
+
+	<!-- <distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>https://github.com/yangyifeng2/redisRpc</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>https://github.com/yangyifeng2/redisRpc</url>
+		</snapshotRepository>
+	</distributionManagement> -->
+
+
+
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -39,20 +87,20 @@
 			<artifactId>spring-core</artifactId>
 			<version>4.1.6.RELEASE</version>
 		</dependency>
-  		<dependency>
-	        <groupId>org.springframework.data</groupId>
-	        <artifactId>spring-data-redis</artifactId>
-	        <version>1.6.4.RELEASE</version>
-	    </dependency>
-    	<dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
-        </dependency>
-        <dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>1.6.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.47</version>
+		</dependency>
+		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 			<version>2.9.0</version>
 		</dependency>
-  </dependencies>
+	</dependencies>
 </project>

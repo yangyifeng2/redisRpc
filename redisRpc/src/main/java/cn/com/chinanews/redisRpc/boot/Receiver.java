@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 
 import java.lang.reflect.Method;
@@ -9,13 +9,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import com.chinanews.redisRpc.sys.RedisRPCSpringApplicationContextHolder;
+import cn.com.chinanews.redisRpc.sys.RedisRPCSpringApplicationContextHolder;
 
 /**
  * 消费者
- * @Description:TODO
  * @author:yy
- * @time:2018年9月4日 上午9:15:47
  */
 @Component
 public class Receiver {

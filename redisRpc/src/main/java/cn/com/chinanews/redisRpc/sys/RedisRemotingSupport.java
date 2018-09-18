@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 
 import org.apache.commons.logging.Log;
@@ -8,10 +8,7 @@ import org.springframework.beans.factory.BeanClassLoaderAware;
 import org.springframework.util.ClassUtils;
 
 /**
- * 
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:45:02
  */
 public abstract class RedisRemotingSupport implements BeanClassLoaderAware {
 

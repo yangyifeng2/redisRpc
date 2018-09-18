@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutionException;
@@ -9,17 +9,15 @@ import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 
-import com.chinanews.redisRpc.boot.RedisRpcException;
-import com.chinanews.redisRpc.boot.RedisRpcGet;
-import com.chinanews.redisRpc.boot.RedisTopicMessage;
-import com.chinanews.redisRpc.boot.Result;
+import cn.com.chinanews.redisRpc.boot.RedisRpcException;
+import cn.com.chinanews.redisRpc.boot.RedisRpcGet;
+import cn.com.chinanews.redisRpc.boot.RedisTopicMessage;
+import cn.com.chinanews.redisRpc.boot.Result;
 
 
 /**
  * 线程池
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:48:00
  */
 public class ThreadPool {
 	

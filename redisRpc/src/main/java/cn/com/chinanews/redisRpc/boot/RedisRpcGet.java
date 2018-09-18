@@ -1,15 +1,13 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 
 import java.util.concurrent.Callable;
 import org.springframework.data.redis.core.RedisTemplate;
-import com.chinanews.redisRpc.sys.RedisRPCSpringApplicationContextHolder;
+import cn.com.chinanews.redisRpc.sys.RedisRPCSpringApplicationContextHolder;
 
 /**
  * 异步发送信息给队列
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:48:27
  */
 public class RedisRpcGet implements Callable{
 

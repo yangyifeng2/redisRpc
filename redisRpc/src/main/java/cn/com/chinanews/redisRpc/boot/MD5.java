@@ -1,10 +1,8 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 /**
  * md5
- * @Description:TODO
  * @author:yy
- * @time:2018年9月4日 上午9:15:26
  */
 public class MD5
 {

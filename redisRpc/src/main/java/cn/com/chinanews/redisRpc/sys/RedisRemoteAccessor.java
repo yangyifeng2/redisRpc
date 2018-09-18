@@ -1,12 +1,9 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
- * 
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:44:45
  */
 public abstract class RedisRemoteAccessor extends RedisRemotingSupport {
 

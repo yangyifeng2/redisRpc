@@ -1,10 +1,8 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 /**
  * 自定义抛出异常
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:48:14
  */
 public class RedisRpcException  extends RuntimeException {
 	  /**

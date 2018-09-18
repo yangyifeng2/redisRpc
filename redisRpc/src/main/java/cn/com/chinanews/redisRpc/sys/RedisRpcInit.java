@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.lang.annotation.Annotation;
 import java.util.HashMap;
@@ -20,15 +20,13 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.stereotype.Service;
 
-import com.chinanews.redisRpc.boot.Receiver;
-import com.chinanews.redisRpc.boot.RedisTopicMessage;
-import com.chinanews.redisRpc.boot.RpcContants;
+import cn.com.chinanews.redisRpc.boot.Receiver;
+import cn.com.chinanews.redisRpc.boot.RedisTopicMessage;
+import cn.com.chinanews.redisRpc.boot.RpcContants;
 
 /**
  * 服务端初始化类
- * @Description:TODO
  * @author:yy
- * @time:2018年9月4日 上午9:19:10
  */
 @Service
 public class RedisRpcInit implements ApplicationListener<ContextRefreshedEvent> {

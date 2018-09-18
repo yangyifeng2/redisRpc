@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.boot;
+package cn.com.chinanews.redisRpc.boot;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -18,9 +18,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 /**
  * 指定的redisTemplate
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:49:08
  */
 @Configuration
 public class RpcConfig {

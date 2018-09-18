@@ -1,4 +1,4 @@
-package com.chinanews.redisRpc.sys;
+package cn.com.chinanews.redisRpc.sys;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -11,9 +11,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * redisRPC注解
- * @Description:TODO
  * @author:yy
- * @time:2018年8月29日 下午4:59:08
  */
 @Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
