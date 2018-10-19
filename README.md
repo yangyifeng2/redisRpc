@@ -13,8 +13,9 @@ public class App{
 }
 ```
 
-3、定义相同的接口，比如TestService
+## 3、定义相同的接口，比如TestService
 
+## 4、简易使用：
 服务端：
 1.使用@RedisRpcService注解标志服务
 示例：
@@ -41,3 +42,28 @@ public RedisRpcProxyFactoryBean redishelloClient() {
 调用时，和spring的服务service一样的使用即可。
 
 
+## 5、扩展使用：
+1、客户端：设置开启rpc缓存后，相同参数的rpc调用将会在设置的缓存时间内在redis中被缓存下来，直到缓存失效为止，可最大效率利用性能，减少系统压力。
+```Java
+@Bean
+public RedisRpcProxyFactoryBean redishelloClient() {
+	RedisRpcProxyFactoryBean factory = new RedisRpcProxyFactoryBean();
+	factory.setUseCache(true);//开启rpc缓存
+	factory.setCacheTime(300000);//设置相关参数数据缓存的时间
+	factory.setReadTimeOut(13000);//设置rpc连接的超时时间
+	factory.setServiceInterface(TestService.class);//设置接口
+	return factory;
+}
+```
+
+2、设置多个redisTemplate:有些系统可能存在多个redisTemplate,可以通过下面的设置，设置redisRpc使用具体的redisTemplate
+```Java
+@Bean
+public RedisRPCSpringApplicationContextHolder redishelloClient2() {
+	RedisRPCSpringApplicationContextHolder factory = new RedisRPCSpringApplicationContextHolder();
+	factory.setRedisTemplate(要设置的redisTemplate);
+	return factory;
+}
+```
+
+*　注：由于项目系个人开发，相关功能细节会有缺失，欢迎使用者多多指正，欢迎使用者提交代码共同成长。
