@@ -1,5 +1,5 @@
 # redisRpc
-理论中最快的RPC，利用redis作为中间层做数据传导，所有的数据传递都保存在redis中，可以设置redis做为数据的中间层缓存，系统中的io压力完全转移到redis中。配置简单，有redisTemplate就可以直接使用，需要服务端和应用端使用同一redis。redis不需要特别的配置，支持spring，支持springBoot，相关代码参考了springRPC.
+理论中最快的RPC，jar包超小，项目侵入性低，与spring无缝衔接，使用简单，利用redis作为中间层做数据传导，所有的数据传递都保存在redis中，可以设置redis做为数据的中间层缓存，系统中的io压力完全转移到redis中。配置简单，有redisTemplate就可以直接使用，需要服务端和应用端使用同一redis。redis不需要特别的配置，支持spring，支持springBoot，相关代码参考了springRPC.
 
 # 必要条件：
 ## 1、spring或springBoot+redisTemplate已经搭建成功
