@@ -12,9 +12,8 @@
 
 # 必要条件：
 ## 1、spring或springBoot+redisTemplate已经搭建成功
-## 2、springBoot或spring需要设置扫描redisRPCcode目录。
-## 3、需要maven导入fastjson
-
+## 2、需要maven导入fastjson
+## 3、springBoot或spring需要设置扫描redisRPCcode目录。
 ```Java
 @SpringBootApplication
 @ComponentScan(basePackages={"cn.com.chinanews.redisRpc","自已的目录 "})
@@ -23,9 +22,9 @@ public class App{
 }
 ```
 
-## 3、定义相同的接口，比如TestService
+## 4、定义相同的接口，比如TestService
 
-## 4、简易使用：
+## 5、简易使用：
 服务端：
 1.使用@RedisRpcService注解标志服务
 示例：
@@ -52,7 +51,7 @@ public RedisRpcProxyFactoryBean redishelloClient() {
 调用时，和spring的服务service一样的使用即可。
 
 
-## 5、扩展使用：
+## 6、扩展使用：
 1、客户端：设置开启rpc缓存后，相同参数的rpc调用将会在设置的缓存时间内在redis中被缓存下来，直到缓存失效为止，可最大效率利用性能，减少系统压力。
 ```Java
 @Bean
